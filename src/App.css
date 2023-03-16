@@ -1,38 +1,85 @@
+
 .App {
+  /* background-color: rgba(255, 255, 255, 0.929); */
+  background-color: #e8eafae8;
+  min-height: 80vh;
+  width: 500px;
+  margin: 20px auto;
   text-align: center;
+  padding: 25px;
+  box-shadow: 5px 10px 18px #383843b7;
+    /* box-shadow: 5px 10px 18px #3a3d58e8; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url(planning.jpg);
+  background-color: #f1ba00;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.crossed {
+  text-decoration: line-through red;
+}
+
+.grey {
+  /* background-color: #e8eafae8; */
+  background-color: rgba(255, 255, 255, 0.929);
+  width: 450px;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Shantell Sans', cursive;
+  font-size: 25px;
+  color: #585151;
+}
+
+h1 {
+  font-family: 'Shantell Sans', cursive;
+  color: blueviolet
+
+}
+
+input {
+  border: none;
+  padding: 15px;
+  border: 2px solid blueviolet;
+  color: rgb(55, 18, 89);
+  font-family: 'Shantell Sans', cursive;
+  font-size: 15px;
+  width: 250px;
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.919);
+  font-family: 'Shantell Sans', cursive;
+  padding: 17px;
+  font-size: 15px;
+  border: none;
+}
+
+.add {
   color: white;
+  background-color: blueviolet;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.delete {
+  color: orangered;
+  border: 2px solid orangered;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  .delete:hover {
+    color: white;
+    background-color: orangered;
+    }
